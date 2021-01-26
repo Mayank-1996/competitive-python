@@ -1,7 +1,7 @@
 n=int(input())
 a = []
 for i in range(2**n):
-  s = bin(i)[0] + bin(i)[2:]
+  s = bin(i)[2:]
   if len(s)>n:
     s = s[::-1]
     s = s[:n]
